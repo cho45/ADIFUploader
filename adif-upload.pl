@@ -45,7 +45,7 @@ GetOptions(
 	"verbose"  => \$opts->{verbose},
 );
 
-my $adif = '/Users/cho45/Downloads/signalreports-20150101143319.adi'; # shift ;
+my $adif = shift or die "require adif file";
 
 sub upload_lotw {
 	my ($opts, $adif) = @_;
